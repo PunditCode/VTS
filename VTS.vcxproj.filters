@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GTLibExt">
+      <UniqueIdentifier>{45c4b7b1-2f3d-447a-96a6-8b7a5ca822d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{b7feb52f-31a1-4d29-8fb3-9b7c4960b057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{acf3875f-a7d3-4606-9064-ec0e3ba2b0fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VTSCommon">
+      <UniqueIdentifier>{a9e16447-db21-4a6e-b0b7-39006f8ab930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.FastTradeDlg">
+      <UniqueIdentifier>{6c4cae4f-ee4a-4e9e-87a8-19994dff2603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\PPToolTip">
+      <UniqueIdentifier>{b1f0dafd-3775-40ce-856b-a63e48f8c2a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VTS.h" />
+    <ClInclude Include="GTLibExt\VTSObjectFactory.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSCodeManager.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSFuturesCurrent.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSOptionsCurrent.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerEventReceiver.h" />
+    <ClInclude Include="GTLibExt\VTSFuturesHoga.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSOptionsHoga.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\BaseTabCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\EnTabCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="BankingHistoryDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="EachdayProfitDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="NoticesDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderHistoryDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientActionLogDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VTSComm\PacketPool.h">
+      <Filter>VTSCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VTSComm\VTSSocket.h">
+      <Filter>VTSCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="VTSDef.h" />
+    <ClInclude Include="GTLibExt\VTSForeignFuturesCurrent.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSForeignFuturesHoga.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSNightFuturesCurrent.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSNightFuturesHoga.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSNightOptionsCurrent.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSNightOptionsHoga.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="GTLibExt\VTSRecvObjBase.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="BankingIORequestDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RecommenderEachdayProfitDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RecommenderMembersActionLogDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RecommenderMembersProfitDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="FuturesCodesDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="PreferencesDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtVTSPaintManager.h" />
+    <ClInclude Include="..\VTSComm\VTSGrid.h">
+      <Filter>VTSCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderActionLogDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment.h" />
+    <ClInclude Include="Controls\EditTrans.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\StaticTrans.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\VEdit.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="AutoOrder.h" />
+    <ClInclude Include="FastTradeDlg.h">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="HogaGrid.h">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsTableDlg.h">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ForeignFuturesCodeDlg.h">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgDlg.h" />
+    <ClInclude Include="VTSCompany.h" />
+    <ClInclude Include="Controls\xSkinButton.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\DKTabCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\DKSampleCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\DKSpinEditCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PPToolTip\CeXDib.h">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PPToolTip\PPDrawManager.h">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PPToolTip\PPHtmlDrawer.h">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PPToolTip\PPTooltip.h">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClInclude>
+    <ClInclude Include="PopupWnd.h" />
+    <ClInclude Include="LogInDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\DKSkinButton.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="explorer.h" />
+    <ClInclude Include="ChangePasswordDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DKMsgBox.h" />
+    <ClInclude Include="GTLibExt\VTSCurrentBase.h">
+      <Filter>GTLibExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VTSComm\VTSPopupWnd.h">
+      <Filter>VTSCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="OvernightRequestDlg.h" />
+    <ClInclude Include="RecommendersClientInfoDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RecommendersClientTotalProfitDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VTSComm\StandaloneWnd.h" />
+    <ClInclude Include="ExchangeMileageDlg.h" />
+    <ClInclude Include="LeverageDlg.h" />
+    <ClInclude Include="VTSMainDlg.h" />
+    <ClInclude Include="VTSMainWnd.h" />
+    <ClInclude Include="VTSDefPopupWnd.h" />
+    <ClInclude Include="WebBrowserDlg.h" />
+    <ClInclude Include="WizMainDlg.h" />
+    <ClInclude Include="WizMainWnd.h" />
+    <ClInclude Include="WizPopupWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="VTS.cpp" />
+    <ClCompile Include="GTLibExt\VTSObjectFactory.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSCodeManager.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSFuturesCurrent.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSOptionsCurrent.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerEventReceiver.cpp" />
+    <ClCompile Include="GTLibExt\VTSFuturesHoga.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSOptionsHoga.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\BaseTabCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\EnTabCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="BankingHistoryDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="EachdayProfitDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="NoticesDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderHistoryDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientActionLogDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VTSComm\PacketPool.cpp">
+      <Filter>VTSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VTSComm\VTSSocket.cpp">
+      <Filter>VTSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSForeignFuturesCurrent.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSForeignFuturesHoga.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSNightFuturesCurrent.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSNightFuturesHoga.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSNightOptionsCurrent.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="GTLibExt\VTSNightOptionsHoga.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="BankingIORequestDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RecommenderEachdayProfitDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RecommenderMembersActionLogDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RecommenderMembersProfitDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="FuturesCodesDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PreferencesDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtVTSPaintManager.cpp" />
+    <ClCompile Include="..\VTSComm\VTSGrid.cpp">
+      <Filter>VTSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderActionLogDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment.cpp" />
+    <ClCompile Include="Controls\EditTrans.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\StaticTrans.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\VEdit.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionRecv.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="AutoOrder.cpp" />
+    <ClCompile Include="VTSDef.cpp" />
+    <ClCompile Include="FastTradeDlg.cpp">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="HogaGrid.cpp">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsTableDlg.cpp">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ForeignFuturesCodeDlg.cpp">
+      <Filter>01.FastTradeDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgDlg.cpp" />
+    <ClCompile Include="Controls\xSkinButton.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\DKTabCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\DKSampleCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\DKSpinEditCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PPToolTip\CeXDib.cpp">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PPToolTip\PPDrawManager.cpp">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PPToolTip\PPHtmlDrawer.cpp">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PPToolTip\PPTooltip.cpp">
+      <Filter>Controls\PPToolTip</Filter>
+    </ClCompile>
+    <ClCompile Include="PopupWnd.cpp" />
+    <ClCompile Include="LogInDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\DKSkinButton.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="explorer.cpp" />
+    <ClCompile Include="ChangePasswordDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DKMsgBox.cpp" />
+    <ClCompile Include="GTLibExt\VTSCurrentBase.cpp">
+      <Filter>GTLibExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VTSComm\VTSPopupWnd.cpp">
+      <Filter>VTSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="OvernightRequestDlg.cpp" />
+    <ClCompile Include="RecommendersClientInfoDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RecommendersClientTotalProfitDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VTS.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\main.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VTS.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\high.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\low.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\open.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\hoga_contract.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="POINTER_COPY.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\cursor_o.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\maintoolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\taskbarAlarm.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\toolbar_DSVIP.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\wiz_toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\hoga_con.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\icons\WIZ.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\icons\DS.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>

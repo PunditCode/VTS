@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_TOPVALUE|Win32">
+      <Configuration>Debug_TOPVALUE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_TOPVALUE|Win32">
+      <Configuration>Release_TOPVALUE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91164565-DF05-4687-BB31-92F1BF772411}</ProjectGuid>
+    <RootNamespace>VTS</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TOPVALUE|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_TOPVALUE|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VTSAll\VirtualTradingSystem.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TOPVALUE|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VTSAll\VirtualTradingSystem.props" />
+    <Import Project="..\PropSht\TOPVALUE.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VTSAll\VirtualTradingSystem.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_TOPVALUE|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VTSAll\VirtualTradingSystem.props" />
+    <Import Project="..\PropSht\TOPVALUE.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TOPVALUE|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_$(PRJNAME)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_TOPVALUE|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_PRJ=PRJ_LINETRADE;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../DKLib;../VTSComm;Controls;../DKCommCtrl;../GTLib; ../VTSServer/XingLib/Xing/packet/</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;Loki-$(PlatformToolset)-D.lib;DKLib.lib;GTLib.lib;DKCommCtrl.lib;VTSComm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\VTSBins\lib\Debug\;..\CrashRpt\lib</AdditionalLibraryDirectories>
+      <OutputFile>$(VTSBinRootD)\Client\$(TargetName)$(TargetExt)</OutputFile>
+      <Profile>false</Profile>
+      <Version>
+      </Version>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_PRJ=PRJ_VTS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(VTSBinRootD)\Client\$(TargetName)$(TargetExt) $(VTSBinRootD)\Manager\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TOPVALUE|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_PRJ=PRJ_$(PRJNAME);WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../DKLib;../VTSComm;Controls;../DKCommCtrl;../GTLib; ../VTSServer/XingLib/Xing/packet/</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;Loki-$(PlatformToolset)-D.lib;DKLib.lib;GTLib.lib;DKCommCtrl.lib;VTSComm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\VTSBins\lib\Debug\</AdditionalLibraryDirectories>
+      <Profile>false</Profile>
+      <Version>
+      </Version>
+      <OutputFile>$(VTSBINS)\Debug\Client\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(VTSBINS)\Debug\Client\$(TargetName)_$(PRJNAME).pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_PRJ=PRJ_$(PRJNAME);_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(VTSBINS)\Debug\Client\$(TargetName)$(TargetExt)		$(VTSBINS)\Debug\Manager</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PreprocessorDefinitions>_PRJ=PRJ_LINETRADE;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../DKLib;../VTSComm;Controls;../DKCommCtrl;../GTLib; ../VTSServer/XingLib/Xing/packet/</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;Loki-$(PlatformToolset).lib;DKLib.lib;GTLib.lib;DKCommCtrl.lib;VTSComm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\VTSBins\lib\Release\</AdditionalLibraryDirectories>
+      <OutputFile>$(VTSBinRoot)\Client\$(TargetName)$(TargetExt)</OutputFile>
+      <Version>
+      </Version>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(VTSBinRoot)\Client\$(TargetName)$(TargetExt) $(VTSBinRoot)\Manager\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_TOPVALUE|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PreprocessorDefinitions>_PRJ=PRJ_$(PRJNAME);WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../DKLib;../VTSComm;Controls;../DKCommCtrl;../GTLib; ../VTSServer/XingLib/Xing/packet/</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;Loki-$(PlatformToolset).lib;DKLib.lib;GTLib.lib;DKCommCtrl.lib;VTSComm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\VTSBins\lib\Release\</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_PRJ=PRJ_$(PRJNAME);NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) 	$(VTSBINS)\Release\$(PRJNAME)
+
+copy $(VTSBINS)\CrashRpt\CrashRpt.dll 		$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+copy $(VTSBINS)\CrashRpt\CrashRpt.pdb 		$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+
+copy $(OutDir)$(TargetName)$(TargetExt) 	$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+copy $(OutDir)$(TargetName).pdb 			$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+
+copy $(VTSBINS)\$(VTSVer)\Common\DKLib.dll 	$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+copy $(VTSBINS)\$(VTSVer)\Common\DKLib.pdb 	$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+
+copy $(VTSBINS)\$(VTSVer)\Common\GTLib.dll 	$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+copy $(VTSBINS)\$(VTSVer)\Common\GTLib.pdb 	$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+
+copy $(VTSBINS)\$(VTSVer)\Common\VTSComm.dll 	$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+copy $(VTSBINS)\$(VTSVer)\Common\VTSComm.pdb 	$(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+
+copy $(VTSBINS)\$(VTSVer)\Common\DKCommCtrl.dll $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+copy $(VTSBINS)\$(VTSVer)\Common\DKCommCtrl.pdb $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>IF NOT EXIST $(VTSBINS)\$(VTSVer)\$(PRJNAME)      mkdir $(VTSBINS)\$(VTSVer)\$(PRJNAME)
+IF NOT EXIST $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client     mkdir $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Client
+IF NOT EXIST $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Manager     mkdir $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Manager
+IF NOT EXIST $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Server     mkdir $(VTSBINS)\$(VTSVer)\$(PRJNAME)\Server
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\VTSComm\PacketPool.h" />
+    <ClInclude Include="..\VTSComm\StandaloneWnd.h" />
+    <ClInclude Include="..\VTSComm\VTSGrid.h" />
+    <ClInclude Include="..\VTSComm\VTSPopupWnd.h" />
+    <ClInclude Include="..\VTSComm\VTSSocket.h" />
+    <ClInclude Include="AutoOrder.h" />
+    <ClInclude Include="BankingHistoryDlg.h" />
+    <ClInclude Include="BankingIORequestDlg.h" />
+    <ClInclude Include="ChangePasswordDlg.h" />
+    <ClInclude Include="Controls\DKSampleCtrl.h" />
+    <ClInclude Include="Controls\DKSkinButton.h" />
+    <ClInclude Include="Controls\DKSpinEditCtrl.h" />
+    <ClInclude Include="Controls\DKTabCtrl.h" />
+    <ClInclude Include="Controls\PPToolTip\CeXDib.h" />
+    <ClInclude Include="Controls\PPToolTip\PPDrawManager.h" />
+    <ClInclude Include="Controls\PPToolTip\PPHtmlDrawer.h" />
+    <ClInclude Include="Controls\PPToolTip\PPTooltip.h" />
+    <ClInclude Include="Controls\xSkinButton.h" />
+    <ClInclude Include="DKMsgBox.h" />
+    <ClInclude Include="ExchangeMileageDlg.h" />
+    <ClInclude Include="explorer.h" />
+    <ClInclude Include="GTLibExt\VTSCurrentBase.h" />
+    <ClInclude Include="MsgDlg.h" />
+    <ClInclude Include="OvernightRequestDlg.h" />
+    <ClInclude Include="PopupWnd.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Controls\BaseTabCtrl.h" />
+    <ClInclude Include="Controls\EditTrans.h" />
+    <ClInclude Include="Controls\EnTabCtrl.h" />
+    <ClInclude Include="Controls\StaticTrans.h" />
+    <ClInclude Include="Controls\VEdit.h" />
+    <ClInclude Include="EachdayProfitDlg.h" />
+    <ClInclude Include="Environment.h" />
+    <ClInclude Include="ExtVTSPaintManager.h" />
+    <ClInclude Include="ForeignFuturesCodeDlg.h" />
+    <ClInclude Include="FuturesCodesDlg.h" />
+    <ClInclude Include="GTLibExt\VTSForeignFuturesHoga.h" />
+    <ClInclude Include="GTLibExt\VTSForeignFuturesCurrent.h" />
+    <ClInclude Include="GTLibExt\VTSNightOptionsCurrent.h" />
+    <ClInclude Include="GTLibExt\VTSNightOptionsHoga.h" />
+    <ClInclude Include="GTLibExt\VTSOptionsHoga.h" />
+    <ClInclude Include="HogaGrid.h" />
+    <ClInclude Include="LogInDlg.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="NoticesDlg.h" />
+    <ClInclude Include="OptionsTableDlg.h" />
+    <ClInclude Include="OrderActionLogDlg.h" />
+    <ClInclude Include="OrderHistoryDlg.h" />
+    <ClInclude Include="PreferencesDlg.h" />
+    <ClInclude Include="RecommenderEachdayProfitDlg.h" />
+    <ClInclude Include="RecommenderMembersActionLogDlg.h" />
+    <ClInclude Include="RecommenderMembersProfitDlg.h" />
+    <ClInclude Include="LeverageDlg.h" />
+    <ClInclude Include="RecommendersClientInfoDlg.h" />
+    <ClInclude Include="RecommendersClientTotalProfitDlg.h" />
+    <ClInclude Include="VTSMainDlg.h" />
+    <ClInclude Include="VTSMainWnd.h" />
+    <ClInclude Include="VTSDefPopupWnd.h" />
+    <ClInclude Include="VTSCompany.h" />
+    <ClInclude Include="VTSDef.h" />
+    <ClInclude Include="RegisterDlg.h" />
+    <ClInclude Include="ServerEventReceiver.h" />
+    <ClInclude Include="FastTradeDlg.h" />
+    <ClInclude Include="GTLibExt\VTSNightFuturesHoga.h" />
+    <ClInclude Include="GTLibExt\VTSNightFuturesCurrent.h" />
+    <ClInclude Include="GTLibExt\VTSCodeManager.h" />
+    <ClInclude Include="GTLibExt\VTSFuturesHoga.h" />
+    <ClInclude Include="GTLibExt\VTSFuturesCurrent.h" />
+    <ClInclude Include="GTLibExt\VTSRecvObjBase.h" />
+    <ClInclude Include="GTLibExt\VTSObjectFactory.h" />
+    <ClInclude Include="GTLibExt\VTSOptionsCurrent.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ClientActionLogDlg.h" />
+    <ClInclude Include="VTS.h" />
+    <ClInclude Include="WebBrowserDlg.h" />
+    <ClInclude Include="WizMainDlg.h" />
+    <ClInclude Include="WizMainWnd.h" />
+    <ClInclude Include="WizPopupWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\VTSComm\PacketPool.cpp" />
+    <ClCompile Include="..\VTSComm\VTSGrid.cpp" />
+    <ClCompile Include="..\VTSComm\VTSPopupWnd.cpp" />
+    <ClCompile Include="..\VTSComm\VTSSocket.cpp" />
+    <ClCompile Include="AutoOrder.cpp" />
+    <ClCompile Include="BankingHistoryDlg.cpp" />
+    <ClCompile Include="BankingIORequestDlg.cpp" />
+    <ClCompile Include="ChangePasswordDlg.cpp" />
+    <ClCompile Include="Controls\DKSampleCtrl.cpp" />
+    <ClCompile Include="Controls\DKSkinButton.cpp" />
+    <ClCompile Include="Controls\DKSpinEditCtrl.cpp" />
+    <ClCompile Include="Controls\DKTabCtrl.cpp" />
+    <ClCompile Include="Controls\PPToolTip\CeXDib.cpp" />
+    <ClCompile Include="Controls\PPToolTip\PPDrawManager.cpp" />
+    <ClCompile Include="Controls\PPToolTip\PPHtmlDrawer.cpp" />
+    <ClCompile Include="Controls\PPToolTip\PPTooltip.cpp" />
+    <ClCompile Include="Controls\xSkinButton.cpp" />
+    <ClCompile Include="DKMsgBox.cpp" />
+    <ClCompile Include="explorer.cpp" />
+    <ClCompile Include="GTLibExt\VTSCurrentBase.cpp" />
+    <ClCompile Include="MsgDlg.cpp" />
+    <ClCompile Include="OvernightRequestDlg.cpp" />
+    <ClCompile Include="PopupWnd.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="Controls\EditTrans.cpp" />
+    <ClCompile Include="Controls\StaticTrans.cpp" />
+    <ClCompile Include="Controls\VEdit.cpp" />
+    <ClCompile Include="Environment.cpp" />
+    <ClCompile Include="ExtVTSPaintManager.cpp" />
+    <ClCompile Include="ForeignFuturesCodeDlg.cpp" />
+    <ClCompile Include="FuturesCodesDlg.cpp" />
+    <ClCompile Include="GTLibExt\VTSForeignFuturesHoga.cpp" />
+    <ClCompile Include="GTLibExt\VTSForeignFuturesCurrent.cpp" />
+    <ClCompile Include="GTLibExt\VTSNightOptionsCurrent.cpp" />
+    <ClCompile Include="GTLibExt\VTSNightOptionsHoga.cpp" />
+    <ClCompile Include="LogInDlg.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="OptionsTableDlg.cpp" />
+    <ClCompile Include="OrderActionLogDlg.cpp" />
+    <ClCompile Include="PreferencesDlg.cpp" />
+    <ClCompile Include="RecommenderEachdayProfitDlg.cpp" />
+    <ClCompile Include="RecommenderMembersActionLogDlg.cpp" />
+    <ClCompile Include="RecommenderMembersProfitDlg.cpp" />
+    <ClCompile Include="RecommendersClientInfoDlg.cpp" />
+    <ClCompile Include="RecommendersClientTotalProfitDlg.cpp" />
+    <ClCompile Include="SessionRecv.cpp" />
+    <ClCompile Include="Controls\BaseTabCtrl.cpp" />
+    <ClCompile Include="Controls\EnTabCtrl.cpp" />
+    <ClCompile Include="EachdayProfitDlg.cpp" />
+    <ClCompile Include="GTLibExt\VTSOptionsHoga.cpp" />
+    <ClCompile Include="HogaGrid.cpp" />
+    <ClCompile Include="NoticesDlg.cpp" />
+    <ClCompile Include="OrderHistoryDlg.cpp" />
+    <ClCompile Include="RegisterDlg.cpp" />
+    <ClCompile Include="ServerEventReceiver.cpp" />
+    <ClCompile Include="FastTradeDlg.cpp" />
+    <ClCompile Include="GTLibExt\VTSNightFuturesHoga.cpp" />
+    <ClCompile Include="GTLibExt\VTSNightFuturesCurrent.cpp" />
+    <ClCompile Include="GTLibExt\VTSCodeManager.cpp" />
+    <ClCompile Include="GTLibExt\VTSFuturesHoga.cpp" />
+    <ClCompile Include="GTLibExt\VTSFuturesCurrent.cpp" />
+    <ClCompile Include="GTLibExt\VTSObjectFactory.cpp" />
+    <ClCompile Include="GTLibExt\VTSOptionsCurrent.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_TOPVALUE|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_TOPVALUE|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ClientActionLogDlg.cpp" />
+    <ClCompile Include="VTS.cpp" />
+    <ClCompile Include="VTSDef.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VTS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\main.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\icons\DS.ico" />
+    <None Include="..\icons\WIZ.ico" />
+    <None Include="POINTER_COPY.cur" />
+    <None Include="res\hoga_con.bmp" />
+    <None Include="res\taskbarAlarm.bmp" />
+    <None Include="res\cursor_o.cur" />
+    <None Include="res\high.bmp" />
+    <None Include="res\hoga_contract.bmp" />
+    <None Include="res\low.bmp" />
+    <None Include="res\maintoolbar.bmp" />
+    <None Include="res\open.bmp" />
+    <None Include="res\toolbar_DSVIP.bmp" />
+    <None Include="res\VTS.rc2" />
+    <None Include="res\wiz_toolbar.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VTS.rc" _x007B_8856F961-340A-11D0-A96B-00C04FD705A2_x007D_="CExplorer" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
